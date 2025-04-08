@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,26 +12,44 @@
 
 .centered {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 #heading {
-  font-size: 192px;
+  font-size: 180px;
 }
+
+.image-container {
+    overflow: hidden;
+    height: 36rem;
+    background-color: black;
+    width: auto;
+}
+
+.image-item {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
 </style>
 </head>
 <body>
 
+
+<div class="container">
+  <div class="image-container">
+    <img class="image-item" src="Screenshot 2025-04-08 131424.png">
+  </div>
+  <div class="centered">
+    <p id="heading">Ukiyo-ee</p>
+  </div>
+</div>
+
 <h2>Image Text</h2>
 <p>How to place text over an image:</p>
 
-<div class="container">
-  <img src="main-image.jpg" alt="Wave" style="width:100%;">
-  <div class="centered">
-    <h1 id="heading">Ukiyo-ee</h1>
-  </div>
-</div>
 
 </body>
 </html> 
